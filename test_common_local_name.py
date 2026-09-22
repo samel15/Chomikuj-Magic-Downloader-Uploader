@@ -51,6 +51,12 @@ class EncodeLocalComponentTest(unittest.TestCase):
             "COM1.zip": "~43OM1.zip",
             "lpt9.foo.txt": "~6cpt9.foo.txt",
             "lpt9": "~6cpt9",
+            "COM¹": "~43OM¹",
+            "COM².txt": "~43OM².txt",
+            "COM³.archive.zip": "~43OM³.archive.zip",
+            "LPT¹": "~4cPT¹",
+            "LPT².txt": "~4cPT².txt",
+            "LPT³.rar": "~4cPT³.rar",
         }
 
         for original, expected in cases.items():
